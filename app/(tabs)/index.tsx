@@ -45,7 +45,6 @@ export default function HomeScreen() {
         <ScrollView style={styles.homeBg}>
             <ThemedView style={styles.welcomeMsg}>
                 <ThemedText>Welcome Back, User </ThemedText>
-                <HelloWave />
             </ThemedView>
             <ThemedView>
                 <ThemedText>Step 1: ur mom</ThemedText>
