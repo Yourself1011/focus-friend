@@ -4,7 +4,23 @@ import { StyleSheet, Text, View, TouchableOpacity,Switch } from 'react-native';
 import { LinearGradient } from 'expo-linear-gradient';
 import Slider from '@react-native-community/slider';
 import AsyncStorage from '@react-native-async-storage/async-storage';
+const getData = async (setting:string) => {
+  try{
+const jsonValue = await AsyncStorage.getItem(setting);
+    return jsonValue != null ? JSON.parse(jsonValue) : null;
+  }catch(err){
+    console.log(err);
+  };
+}
+const storeData = async(setting:string, value:any) => {
+try{
+  const jsonValue = JSON.stringify(value);
+  await AsyncStorage.setItem(setting, jsonValue);
+}catch(err){
 
+
+}
+}
 
 
 function SettingWidget(){
@@ -19,7 +35,7 @@ function SettingWidget(){
 function SliderWidget({setting}: {setting: string}) {
   let savedData;
 useEffect(()=>{
-savedData = getData(setting)==null?100:getData(setting);
+savedData = (getData(setting)==null?100:getData(setting));
 storeData(setting, savedData);
 },[]);
 
@@ -45,23 +61,7 @@ return(
 
 
 
-const getData = async (setting:string) => {
-  try{
-const jsonValue = await AsyncStorage.getItem(setting);
-    return jsonValue != null ? JSON.parse(jsonValue) : null;
-  }catch(err){
-    console.log(err);
-  };
-}
-const storeData = async(setting:string, value:any) => {
-try{
-  const jsonValue = JSON.stringify(value);
-  await AsyncStorage.setItem(setting, jsonValue);
-}catch(err){
 
-
-}
-}
 function SwitchWidget({setting}: {setting: string}) {
   let savedData;
     useEffect(() => {
