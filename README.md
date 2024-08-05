@@ -1,50 +1,33 @@
-# Welcome to your Expo app 👋
+## Inspiration
+We wanted a technically advanced project — something that had to take at least the time we were at the hackathon to do. Still, we also wanted it to be unique, which brought us to the world of Neuroscience and Electric Engineering.   We were amazed that brain waves can not only be measured non-invasively but can tell us a lot about the individual, which includes fatigue and overall productivity.
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+## What it does
+Using an Electroencephalogram ( EEG ) made from scratch:
+1. Measures electrical activity (waves) emitted by the brain
+2. Sends the data through Bluetooth to a mobile device
+3. Analyzes this information looking at the average height of the function at a given time to determine if it is Beta wave — which represents focus or an Alpha wave — if one is deeply relaxed.  
+4. The data is then displayed as a neat graph and summed up for the user.
 
-## Get started
+## How we built it
+1. Software: Expo + React Native, TypeScript, Liveshare
+2. Hardware: Arduinos, Bluetooth Module, Operational amplifers, electrodes, resistors, capacitors
 
-1. Install dependencies
+## Challenges we ran into
+- Setting up Bluetooth
+- Package conflicts (caused by Expo)
+- Building troubles (caused by Expo)
 
-   ```bash
-   npm install
-   ```
+## Accomplishments that we're proud of
+1. Getting the EEG to work
+2. Connecting from phone to EEG through Bluetooth
+3. Making a nice UI
 
-2. Start the app
+## What we learned
+- React Native Expo Apps and how buggy they are 
+- How EEGs work
 
-   ```bash
-    npx expo start
-   ```
-
-In the output, you'll find options to open the app in a
-
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
-
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
-
-## Get a fresh project
-
-When you're ready, run:
-
-```bash
-npm run reset-project
-```
-
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
-
-## Learn more
-
-To learn more about developing your project with Expo, look at the following resources:
-
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
-
-## Join the community
-
-Join our community of developers creating universal apps.
-
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## What's next for Focus Friend
+1. Nonsticky electrodes
+2. Calibration for users
+3. Website support
+4. World domination
