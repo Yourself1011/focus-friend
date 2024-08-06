@@ -1,3 +1,5 @@
+DEVPOST LINK (images): https://devpost.com/software/car-buddy-qs3khl?ref_content=my-projects-tab&ref_feature=my_projects
+
 ## Inspiration
 We wanted a technically advanced project — something that had to take at least the time we were at the hackathon to do. Still, we also wanted it to be unique, which brought us to the world of Neuroscience and Electric Engineering.   We were amazed that brain waves can not only be measured non-invasively but can tell us a lot about the individual, which includes fatigue and overall productivity.
 
